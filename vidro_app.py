@@ -43,25 +43,23 @@ with st.sidebar:
 
     with st.form(key='my_form'):
 
-        # [ 'idade', 'sexo', 'IMC', 'num_filhos', 'fumante', 'regiao']
+        RI = st.number_input('Refractive Index', min_value=1.51115, max_value=1.53393, step=0.0005, value=1.51905, format='%.4f')
 
-        RI = st.number_input('Refractive Index', min_value=1.51115, max_value=1.53393, step=0.005, value=1.52000)
-
-        Na = st.number_input('Sodium', min_value=10.73, max_value=17.38, step=0.5, value=15.5)
+        Na = st.number_input('Sodium', min_value=10.73, max_value=17.38, step=0.05, value=14.00)
         
-        Mg = st.number_input('Magnesium', min_value=0.0, max_value=4.49, step=0.5, value=2.0)
+        Mg = st.number_input('Magnesium', min_value=0.0, max_value=4.49, step=0.1, value=2.39)
 
-        Al = st.number_input('Aluminum', min_value=0.29, max_value=3.5, step=0.40, value=1.5)
+        Al = st.number_input('Aluminum', min_value=0.29, max_value=3.5, step=0.1, value=1.56)
 
-        Si = st.number_input('Silicon', min_value=69.81, max_value=75.41, step=0.40, value=71.21)
+        Si = st.number_input('Silicon', min_value=69.81, max_value=75.41, step=0.4, value=72.37)
 
-        K = st.number_input('Potassium', min_value=0.0, max_value=6.21, step=0.60, value=2.51)
+        K = st.number_input('Potassium', min_value=0.0, max_value=6.21, step=0.15, value=0.00)
         
-        Ca = st.number_input('Calcium', min_value=5.43, max_value=16.19, step=1.0, value=10.0)
+        Ca = st.number_input('Calcium', min_value=5.43, max_value=16.19, step=0.7, value=9.57)
 
-        Ba = st.number_input('Barium', min_value=0.0, max_value=3.15, step=0.40, value=1.20)
+        Ba = st.number_input('Barium', min_value=0.0, max_value=3.15, step=0.15, value=0.00)
 
-        Fe = st.number_input('Iron', min_value=0.0, max_value=0.51, step=0.05, value=0.0)
+        Fe = st.number_input('Iron', min_value=0.0, max_value=0.51, step=0.025, value=0.00)
 
         predict_button = st.form_submit_button(label='Resultado')
 
