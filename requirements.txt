@@ -1,6 +1,6 @@
 streamlit
 pandas
 numpy
-PIL==10.0
+Pillow==9.5.0
 pickle
 xgboost
